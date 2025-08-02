@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- SEO and accessibility meta tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio of Brian Makini, a teacher and aspiring front-end developer passionate about creating educational web interfaces using HTML and CSS." />
+  <meta name="keywords" content="portfolio, teacher, front-end developer, education technology, HTML, CSS" />
+  <meta name="author" content="Brian Makini" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Brian Makini - Teacher & Aspiring Developer" />
+  <meta property="og:description" content="Explore Brian Makini's portfolio, showcasing HTML and CSS skills for educational web design." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://brianmakini.github.io/portfolio" />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630" />
+  <title>Brian Makini - Teacher & Aspiring Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Sticky Header with Nav -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-logo">Brian Makini</div>
+
+      <!-- Mobile menu toggle checkbox -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox" hidden aria-label="Toggle navigation menu" />
+      <label for="menu-toggle" class="menu-toggle" role="button" tabindex="0">
+        <span class="icon-menu"></span>
+      </label>
+
+      <ul class="nav-links" role="menubar">
+        <li role="none"><a role="menuitem" href="#about">About</a></li>
+        <li role="none"><a role="menuitem" href="#skills">Skills</a></li>
+        <li role="none"><a role="menuitem" href="#education">Education</a></li>
+        <li role="none"><a role="menuitem" href="#resume">Resume</a></li>
+        <li role="none"><a role="menuitem" href="#interests">Interests</a></li>
+        <li role="none"><a role="menuitem" href="#projects">Projects</a></li>
+        <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="btn get-in-touch">Get in Touch</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section with background and shape divider -->
+  <section class="hero" style="background-image: url('assets/banner-bg.png');" aria-label="Hero introduction banner">
+    <div class="particles" aria-hidden="true">
+      <!-- Floating particles -->
+      <div></div><div></div><div></div><div></div><div></div><div></div>
+    </div>
+    <div class="hero-content">
+      <img src="assets/profile.jpeg" alt="Brian Makini's profile picture" class="banner-profile-img" />
+      <h1>Brian Makini</h1>
+      <div class="typing-container" aria-live="polite" role="text">
+        <span class="typing-text">Teacher & Developer</span>
+        <span class="typing-text">Education Innovator</span>
+        <span class="typing-text">Self-Taught Coder</span>
+      </div>
+      <p>
+        As a teacher and aspiring front-end developer, I’m passionate about blending education with web design to create accessible, user-friendly interfaces for students.
+      </p>
+      <div class="cta-buttons">
+        <a href="assets/cv.pdf" class="btn" download>Download Resume</a>
+        <a href="#projects" class="btn">Explore Projects</a>
+      </div>
+      <div class="social-links" role="list">
+        <a href="https://github.com/lykerclassy" target="_blank" aria-label="GitHub profile" role="listitem"><span class="icon-github" aria-hidden="true"></span></a>
+        <a href="https://linkedin.com/in/kane-walker-0b715b218" target="_blank" aria-label="LinkedIn profile" role="listitem"><span class="icon-linkedin" aria-hidden="true"></span></a>
+        <a href="mailto:kanewalker483@gmail.com" aria-label="Email Brian Makini" role="listitem"><span class="icon-email" aria-hidden="true"></span></a>
+      </div>
+    </div>
+    <div class="scroll-down" aria-hidden="true"></div>
+  </section>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/+254791567689" target="_blank" class="whatsapp-float" aria-label="Contact via WhatsApp" rel="noopener">
+    <span class="icon-whatsapp" aria-hidden="true"></span>
+  </a>
+
+  <!-- Main content wrapper -->
+  <main class="container">
+    <!-- About Section -->
+    <section id="about" class="section" tabindex="-1">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="assets/profile.jpeg" alt="Brian Makini's profile picture" class="about-profile-img" />
+        <p>
+          I am Brian Makini, a teacher by profession and an aspiring front-end developer, self-taught in HTML and CSS. Enrolled in a certified software engineering course at Power Learn Academy, I’m passionate about creating educational web interfaces. My project, Elimudigital, is a prototype for a student learning platform, built with HTML and CSS, and I’m eager to collaborate on accessible web solutions.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section" tabindex="-1">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card" tabindex="0" aria-label="Frontend skills: HTML5, CSS3">
+          <h3>Frontend</h3>
+          <div class="progress-bar"><div style="width: 85%;"></div></div>
+          <p>HTML5, CSS3</p>
+        </div>
+        <div class="skill-card" tabindex="0" aria-label="Tools: VS Code">
+          <h3>Tools</h3>
+          <div class="progress-bar"><div style="width: 70%;"></div></div>
+          <p>VS Code</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section" tabindex="-1">
+      <h2>Education</h2>
+      <div class="education-content">
+        <p>Bachelor Education Arts, Management University of Africa, 2021-2025</p>
+        <p>Certified Software Engineering Course, Power Learn Academy (In Progress)</p>
+        <a href="assets/cv.pdf" class="btn" download>View Full Resume</a>
+      </div>
+    </section>
+
+    <!-- Resume Section with Accordion -->
+    <section id="resume" class="section" tabindex="-1" aria-label="Resume with accordion">
+      <h2>Resume</h2>
+      <input type="checkbox" id="intern-1" class="accordion-checkbox" hidden />
+      <label for="intern-1" class="accordion-label" tabindex="0" aria-expanded="false" aria-controls="content-1" role="button">
+        Web Developer Intern (Jun 2023 - Aug 2023)
+      </label>
+      <div id="content-1" class="accordion-content" role="region" aria-labelledby="intern-1">
+        <p>Enhanced website performance using optimized HTML and CSS.</p>
+      </div>
+
+      <input type="checkbox" id="intern-2" class="accordion-checkbox" hidden />
+      <label for="intern-2" class="accordion-label" tabindex="0" aria-expanded="false" aria-controls="content-2" role="button">
+        Freelance UI/UX Designer (Jan 2022 - Dec 2022)
+      </label>
+      <div id="content-2" class="accordion-content" role="region" aria-labelledby="intern-2">
+        <p>Designed user interfaces for 5+ clients, improving user retention.</p>
+      </div>
+
+      <input type="checkbox" id="intern-3" class="accordion-checkbox" hidden />
+      <label for="intern-3" class="accordion-label" tabindex="0" aria-expanded="false" aria-controls="content-3" role="button">
+        DOS Assistant, IMSS (Sep 2024 - Present)
+      </label>
+      <div id="content-3" class="accordion-content" role="region" aria-labelledby="intern-3">
+        <p>Integrating technology in education through web design.</p>
+      </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="section" tabindex="-1">
+      <h2>Interests</h2>
+      <div class="interests-grid">
+        <div class="interest-card" tabindex="0">
+          <p><strong>EdTech</strong><br />Designing web interfaces to enhance learning.</p>
+        </div>
+        <div class="interest-card" tabindex="0">
+          <p><strong>Open Source</strong><br />Contributing to community-driven web projects.</p>
+        </div>
+        <div class="interest-card" tabindex="0">
+          <p><strong>Collaboration</strong><br />Working on accessible web solutions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section" tabindex="-1">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card" tabindex="0" aria-label="Project Elimudigital">
+          <div class="project-image" style="background-image:url('https://via.placeholder.com/300x200?text=Elimudigital')"></div>
+          <div class="project-details">
+            <h3>Elimudigital</h3>
+            <p>A prototype platform for students to access learning materials, built with HTML and CSS.</p>
+            <div class="project-links">
+              <a href="https://github.com/lykerclassy/elimudigital" target="_blank" class="btn" rel="noopener">Code</a>
+              <a href="https://lykerclassy.github.io/elimudigital" target="_blank" class="btn" rel="noopener">Live</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" tabindex="0" aria-label="Project Task Manager">
+          <div class="project-image" style="background-image:url('https://via.placeholder.com/300x200?text=Task+Manager')"></div>
+          <div class="project-details">
+            <h3>Task Manager</h3>
+            <p>A static prototype of a productivity tool, built with HTML and CSS.</p>
+            <div class="project-links">
+              <a href="https://github.com/lykerclassy/task-manager" target="_blank" class="btn" rel="noopener">Code</a>
+              <a href="#" class="btn" aria-disabled="true" tabindex="-1">Live</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" tabindex="0" aria-label="Project Personal Portfolio">
+          <div class="project-image" style="background-image:url('https://via.placeholder.com/300x200?text=Portfolio')"></div>
+          <div class="project-details">
+            <h3>Personal Portfolio</h3>
+            <p>A sleek portfolio built with HTML and CSS.</p>
+            <div class="project-links">
+              <a href="https://github.com/lykerclassy/portfolio" target="_blank" class="btn" rel="noopener">Code</a>
+              <a href="https://brianmakini.github.io/portfolio" target="_blank" class="btn" rel="noopener">Live</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section" tabindex="-1">
+      <h2>Contact</h2>
+      <div class="contact-wrapper">
+        <form class="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required aria-label="Name" />
+          <input type="email" name="email" placeholder="Your Email" required aria-label="Email" />
+          <textarea name="message" placeholder="Your Message" rows="5" required aria-label="Message"></textarea>
+          <button type="submit" class="btn">Send</button>
+        </form>
+        <div class="contact-info" role="contentinfo">
+          <div class="info-item">
+            <span class="icon-email" aria-hidden="true"></span>
+            <p>kanewalker483@gmail.com</p>
+          </div>
+          <div class="info-item">
+            <span class="icon-phone" aria-hidden="true"></span>
+            <p>+254 791 567 689</p>
+          </div>
+          <div class="info-item">
+            <span class="icon-location" aria-hidden="true"></span>
+            <p>Nairobi, Kenya</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" aria-label="Back to top" title="Back to top">
+    <span class="icon-up" aria-hidden="true"></span>
+  </a>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="https://github.com/lykerclassy" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/kane-walker-0b715b218" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <p>&copy; 2025 Brian Makini. All rights reserved.</p>
+  </footer>
+</body>
+</html>
