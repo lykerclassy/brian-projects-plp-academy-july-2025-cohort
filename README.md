@@ -38,7 +38,7 @@ Installation
 
 Clone or Download the Repository:
 
-Clone: git clone https://github.com/lykerclassy/portfolio.git (replace with your repository URL).
+Clone: git clone https://github.com/lykerclassy/brian-projects-plp-academy-july-2025-cohort.git (replace with your repository URL).
 Or download the ZIP file and extract it.
 
 
@@ -60,7 +60,7 @@ Deployment
 GitHub Pages:
 Push the project to a GitHub repository.
 Enable GitHub Pages in the repository settings, selecting the main branch and / (root) folder.
-Access the site at https://lykerclassy.github.io/portfolio.
+Access the site at https://lykerclassy.github.io/brian-projects-plp-academy-july-2025-cohort/.
 
 
 Other Hosting:
