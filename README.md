@@ -143,3 +143,5 @@ Acknowledgments
 
 Power Learn Academy for the assignment and training in HTML and CSS.
 Placeholder images from via.placeholder.com.
+"# plp-projects-2025-july-cohort-hackathon" 
+"# plp-projects-2025-july-cohort-hackathon" 
