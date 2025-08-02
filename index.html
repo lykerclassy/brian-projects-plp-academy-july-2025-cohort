@@ -203,38 +203,35 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
-<section id="contact" class="section" tabindex="-1">
-  <h2>Contact</h2>
-  <div class="contact-wrapper">
-    <form class="contact-form" action="https://formspree.io/f/xdkdleek" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required aria-label="Name" />
-      <input type="email" name="email" placeholder="Your Email" required aria-label="Email" />
-      <textarea name="message" placeholder="Your Message" rows="5" required aria-label="Message"></textarea>
-
-      <!-- Optional: redirect after form submission -->
-      <input type="hidden" name="_next" value="https://lykerclassy.github.io/brian-projects-plp-academy-july-2025-cohort/" />
-
-      <button type="submit" class="btn">Send</button>
-    </form>
-
-    <div class="contact-info" role="contentinfo">
-      <div class="info-item">
-        <span class="icon-email" aria-hidden="true"></span>
-        <p>kanewalker483@gmail.com</p>
+     <!-- Contact Section -->
+    <section id="contact" class="section" tabindex="-1">
+      <h2>Contact</h2>
+      <div class="contact-wrapper">
+        <form action="https://formspree.io/f/xdkdleek" method="POST" class="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required aria-label="Name" />
+          <input type="email" name="_replyto" placeholder="Your Email" required aria-label="Email" />
+          <textarea name="message" placeholder="Your Message" rows="5" required aria-label="Message"></textarea>
+          <input type="hidden" name="_subject" value="New Contact Form Submission" />
+          <input type="hidden" name="_next" value="/thank-you.html" />
+          <input type="text" name="_gotcha" style="display:none" />
+          <button type="submit" class="btn">Send</button>
+        </form>
+        <div class="contact-info" role="contentinfo">
+          <div class="info-item">
+            <span class="icon-email" aria-hidden="true"></span>
+            <p>kanewalker483@gmail.com</p>
+          </div>
+          <div class="info-item">
+            <span class="icon-phone" aria-hidden="true"></span>
+            <p>+254 791 567 689</p>
+          </div>
+          <div class="info-item">
+            <span class="icon-location" aria-hidden="true"></span>
+            <p>Nairobi, Kenya</p>
+          </div>
+        </div>
       </div>
-      <div class="info-item">
-        <span class="icon-phone" aria-hidden="true"></span>
-        <p>+254 791 567 689</p>
-      </div>
-      <div class="info-item">
-        <span class="icon-location" aria-hidden="true"></span>
-        <p>Nairobi, Kenya</p>
-      </div>
-    </div>
-  </div>
-</section>
-
+    </section>
   </main>
 
   <!-- Back to Top Button -->
